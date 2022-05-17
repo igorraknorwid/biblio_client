@@ -1,0 +1,22 @@
+.box {
+  padding: 50px auto;
+  display: grid;
+  grid-template-columns: 3fr 1.5fr;
+  column-gap: 30px;
+  margin-bottom: 10px;
+}
+
+.mobile_box {
+  padding: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.content,
+.filters {
+  border: 1px solid lightgray;
+  padding: 10px;
+}
+
+.filters > * + * {
+  margin-top: 20px;
+}

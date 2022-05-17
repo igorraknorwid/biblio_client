@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { observer } from "mobx-react-lite";
-import styles from "./MyButton.module.scss";
 import { useNavigate } from "react-router-dom";
+import styles from "./MyButton.module.scss";
 
 interface IMyButton {
   marginTop?: number;
@@ -19,7 +19,7 @@ const MyButton: FC<IMyButton> = ({
   link,
   usual = false,
 }) => {
-  let navigate = useNavigate();
+  const navigate = useNavigate();
   const nextStep = () => {
     navigate(link);
   };

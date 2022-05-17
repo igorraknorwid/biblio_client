@@ -14,25 +14,37 @@
   font-style: normal;
 }
 
+html,
 body {
   font-family: "Author";
+  width: 100%;
+  height: 100%;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-.container {
-  padding: 0 100px 50px 100px;
-}
-.mobile_container {
-  padding: 20px;
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
-.title {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 28px;
-  color: #051655;
+main {
+  flex-grow: 1;
+}
+
+header,
+main,
+footer {
+  flex-shrink: 0;
+}
+
+.container {
+  padding: 20px 100px 0 100px;
+}
+.mobile_container {
+  padding: 10px;
 }

@@ -1,7 +1,7 @@
 import React, { FC, ChangeEvent } from "react";
 import { observer } from "mobx-react-lite";
-import styles from "./MyInput.module.scss";
 import { isMobile } from "react-device-detect";
+import styles from "./MyInput.module.scss";
 
 interface IMyInput {
   value: string;
@@ -26,7 +26,7 @@ const MyInput: FC<IMyInput> = ({
         <img className={styles.img} src={src} alt={alt} />
       </div>
       <input
-        style={isMobile ? { minWidth: `20%` } : { minWidth: `${minWidth}px` }}
+        style={isMobile ? { minWidth: "20%" } : { minWidth: `${minWidth}px` }}
         className={styles.input}
         placeholder={placeholder}
         type='text'

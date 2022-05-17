@@ -1,0 +1,16 @@
+.box {
+  margin: 20px 0;
+}
+
+.item {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.box > * + * {
+  margin-top: 10px;
+}
+
+.item {
+  font-size: 1.2rem;
+}

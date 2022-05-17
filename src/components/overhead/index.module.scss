@@ -1,0 +1,34 @@
+.up {
+  background-color: #fff;
+  border: 1px solid lightgray;
+  padding: 20px;
+}
+.up {
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.up_box {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.up_title {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.select_box {
+  display: flex;
+}
+
+.select_box > * + * {
+  margin-left: 10px;
+}

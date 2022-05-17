@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { observer } from "mobx-react-lite";
-import styles from "./Title.module.scss";
 import { isMobile } from "react-device-detect";
+import styles from "./Title.module.scss";
 interface ITitle {
   marginTop?: number;
   marginBottom?: number;

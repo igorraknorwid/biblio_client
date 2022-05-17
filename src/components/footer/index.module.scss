@@ -1,0 +1,22 @@
+@import "../../styles/var";
+
+.footer {
+  background-color: $secondaryBgColor;
+  color: $secondaryColor;
+}
+
+.container {
+  padding: 20px 100px 20px 100px;
+}
+
+.mobile_container {
+  padding: 20px;
+}
+
+.title {
+  font-size: 1.3rem;
+}
+
+.mobile_title {
+  font-size: 1rem;
+}

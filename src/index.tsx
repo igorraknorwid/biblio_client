@@ -1,54 +1,34 @@
 import React, { createContext } from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
-import Store from "./store/store";
-import Cities from "./store/cities";
-import Objectives from "./store/objectives";
-import Image from "./store/image";
-import Links from "./store/links";
-import Interests from "./store/interests";
 import { BrowserRouter as Router } from "react-router-dom";
+import App from "./App";
+import Cards from "./store/cards";
+import Years from "./store/years";
 import "./styles/index.scss";
 
 interface State {
-  store: Store;
-  cities: Cities;
-  objectives: Objectives;
-  photo: Image;
-  links: Links;
-  interests: Interests;
+  cards: Cards;
+  years: Years;
 }
 
-export const store = new Store();
-export const cities = new Cities();
-export const objectives = new Objectives();
-export const photo = new Image();
-export const links = new Links();
-export const interests = new Interests();
+export const cards = new Cards();
+export const years = new Years();
 
 export const Context = createContext<State>({
-  store,
-  cities,
-  objectives,
-  photo,
-  links,
-  interests,
+  cards,
+  years,
 });
 
 ReactDOM.render(
   <Context.Provider
     value={{
-      store,
-      cities,
-      objectives,
-      photo,
-      links,
-      interests,
+      cards,
+      years,
     }}
   >
     <Router>
       <App />
     </Router>
   </Context.Provider>,
-  document.getElementById("root")
+  document.getElementById("root"),
 );

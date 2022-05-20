@@ -17,6 +17,7 @@ const Cards: FC = () => {
           <Overhead />
           <div className={styles.box}>
             <div className={styles.content}>
+              <Pagination />
               <CardsList />
               <Pagination />
             </div>

@@ -9,6 +9,9 @@ const Years: FC = () => {
   useEffect(() => {
     years.fetchYears();
   }, []);
+  if (years.isLoading) {
+    return <div>...LOADING</div>;
+  }
   return (
     <div className={styles.box}>
       {years.sortedYears.map((year) => {
